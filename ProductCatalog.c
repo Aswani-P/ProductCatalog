@@ -93,7 +93,7 @@ void getProductNeedWarper(int productNumber ){
     if (need_wraper==1||need_wraper==0){
         cart.products[productNumber].need_wraper = need_wraper;
     }else{
-        printf("(Pleasr enter 1 for yes/ 0 for no)\n");
+        printf("(Please enter 1 for yes/ 0 for no)\n");
         getProductNeedWarper(productNumber);
     }
 }
@@ -212,4 +212,4 @@ void displayBill(){
     printf("Shipping fee     : $%d\n", cart.shipping_fee);
     printf("Gift wrap fee    : $%d\n", cart.gift_wrap_fee);
     printf("Total            : $%d\n", cart.grand_total );
-}
+}  
